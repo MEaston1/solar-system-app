@@ -1,0 +1,286 @@
+<resources>
+    <string name="app_name">Solar System</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="nav_planets"><b>Planets</b></string>
+    <string name="nav_other"><b>Other</b></string>
+
+    <string name="home_second">Home Second</string>
+
+    <string-array name="text_sizes">
+        <item>Small Text Size</item>
+        <item>Normal Text Size</item>
+        <item>Large Text Size</item>
+    </string-array>
+
+    <string name="solar_system_info">Our planetary system is located in an outer spiral arm of
+        the Milky Way galaxy.\n
+        \nOur solar system consists of our star, the Sun, and everything bound to it by gravity —
+        the planets Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune,
+        dwarf planets such as Pluto, dozens of moons and millions of asteroids, comets and
+        meteoroids. Beyond our own solar system, we have discovered thousands of planetary systems
+        orbiting other stars in the Milky Way.\n
+        \n<b>What We Know So Far:</b>
+        \n<b>Age:</b> 4.6 Billion Years
+        \n<b>Number of Planets:</b> 8
+        \n<b>Number of Dwarf Planets:</b> 5
+        \n<b>Number of Moons:</b> 200+
+        \n<b>Number of Comets:</b> 3,633
+        \n<b>Number of Asteroids:</b> 958,263
+        \n<b>Diameter:</b> 18.75 trillion kilometers
+    </string>
+
+    <string name="potential_for_life"><b>Potential for Life</b>
+        \nOur solar system is the only place we know of that harbors life, but the farther we explore
+        the more we find potential for life in other places. Both Jupiter’s moon Europa and Saturn’s
+        moon Enceladus have global saltwater oceans under thick, icy shells.
+    </string>
+
+    <string name="mercury_info">Mercury is the closest planet to the sun. As such, it circles the
+        sun faster than all the other planets, which is why Romans named it after their
+        swift-footed messenger god.\n
+        \nAccording to NASA, the atmosphere of Mercury is a surface-bound exosphere,
+        essentially a vacuum. It contains 42 percent oxygen, 29 percent sodium, 22 percent hydrogen,
+        6 percent helium, 0.5 percent potassium, with possible trace amounts of argon, carbon dioxide,
+        water, nitrogen, xenon, krypton and neon.\n
+        \n<b>Did You Know?</b>
+        \nBecause of Mercury\'s elliptical—egg-shaped—orbit and sluggish rotation, the morning Sun
+        appears to rise briefly, set and rise again from some parts of the planets surface.
+        The same thing happens in reverse at sunset.
+    </string>
+    <string name="mercury_facts"><b>Average distance from Sun:</b> 57.9 million km
+        \n<b>Size (radius):</b> 2,439.7 km
+        \n<b>Size (Compared to Earth):</b>  0.38 time the size of Earth
+        \n<b>Mass:</b> 3.285 × 10^23 kg (0.055 M⊕)
+        \n<b>Length of Day:</b> 58d 15h 30m
+        \n<b>Length of Year:</b> 88 days
+        \n<b>Planet Type:</b> Terrestrial
+        \n<b>Number of Moons:</b> None
+        \n<b>Surface Temperature:</b> Day: 430 Celsius, Night: -180 Celsius
+    </string>
+
+    <string name="venus_info">Although it is the second planet from the sun, Venus is the hottest
+        planet in the solar system. The reason Venus is hotter than even Mercury is not because of
+        its position in the solar system but because of its thick, dense cloud layer.\n
+        \nRoughly two-thirds of the Venusian surface is covered by flat, smooth plains that are
+        marred by thousands of volcanoes, some of which are still active today, ranging from about
+        0.5 to 150 miles (0.8 to 240 kilometers) wide, with lava flows carving long, winding canals
+        that are up to more than 3,000 miles (5,000 km) in length — longer than on any other planet.\n
+        \n<b>Did You Know?</b>
+        \nThe Soviet Union’s Venera 13 survived the intense heat and crushing pressure of Venus’
+        surface for more than two hours. Engineers from several nations are currently studying
+        methods to extend the life of robotic spacecraft in the extreme environment.
+    </string>
+    <string name="venus_facts"><b>Average distance from Sun:</b> 108 million km
+        \n<b>Size (radius):</b> 6,051.8 km
+        \n<b>Size (Compared to Earth):</b>  0.9499 time the size of Earth
+        \n<b>Mass:</b> 4.867 × 10^24 kg (0.815 M⊕)
+        \n<b>Length of Day:</b> 116d 18h 0m
+        \n<b>Length of Year:</b> 225 days
+        \n<b>Planet Type:</b> Terrestrial
+        \n<b>Number of Moons:</b> None
+        \n<b>Surface Temperature:</b> Average: 462 degrees Celsius
+    </string>
+    <string name="earth_info">Earth is the third closest planet to the sun and is the only habitable
+        planet in our solar system.\n
+        \nIf you could separate the Earth out into piles of material, you’d get 32.1 % iron,
+        30.1% oxygen, 15.1% silicon, and 13.9% magnesium. Of course, most of this iron is actually
+        down at the core of the Earth. If you could actually get down and sample the core, it
+        would be 88% iron. 47% of the Earth’s crust consists of oxygen.\n
+        \n<b>Did You Know?</b>
+        \nLaika the dog was the first Earthling to orbit Earth aboard the Soviet Unions Sputnik 2
+        in 1957. She did not survive the trip. A few years later, the next two Soviet space
+        dogs—Belka and Strelka—became the first living creatures to return from space alive—paving
+        the way for future human explorers.
+    </string>
+    <string name="earth_facts"><b>Average distance from Sun:</b> 150.65 million km
+        \n<b>Size (radius):</b> 6,371 km
+        \n<b>Size (Compared to Earth):</b>  1 time the size of Earth (is the earth)
+        \n<b>Mass:</b> 5.972 × 10^24 kg (1 M⊕)
+        \n<b>Length of Day:</b> 1d
+        \n<b>Length of Year:</b> 365 days
+        \n<b>Planet Type:</b> Terrestrial
+        \n<b>Number of Moons:</b> 1
+        \n<b>Surface Temperature:</b> Average: 14 degrees Celsius
+    </string>
+    <string name="mars_info">Mars is the fourth planet from the sun and takes its name from the
+        Roman god of war.\n
+        \nMars and Earth have approximately the same landmass. Even though Mars has only 15% of the
+        Earth’s volume and just over 10% of the Earth’s mass, around
+        two thirds of the Earth’s surface is covered in water. Martian surface gravity is only 37%
+        of the Earth’s (meaning you could leap nearly three times higher on Mars).\n
+        \n<b>Did You Know?</b>
+        \nMars is home to the tallest mountain in the solar system. Olympus Mons, a shield volcano,
+        is 21km high and 600km in diameter. Despite having formed over billions of years,
+        evidence from volcanic lava flows is so recent many scientists believe it could still be active.
+    </string>
+    <string name="mars_facts"><b>Average distance from Sun:</b> 217.02 million km
+        \n<b>Size (radius):</b> 3,389.5 km
+        \n<b>Size (Compared to Earth):</b>  0.532 time the size of Earth
+        \n<b>Mass:</b> 6.39 × 10^23 kg (0.107 M⊕)
+        \n<b>Length of Day:</b> 1d 0h 37m
+        \n<b>Length of Year:</b> 687 days
+        \n<b>Planet Type:</b> Terrestrial
+        \n<b>Number of Moons:</b> 2
+        \n<b>Surface Temperature:</b> Average: -60 degrees Celsius
+    </string>
+    <string name="jupiter_info">Jupiter is the fifth planet from the sun and the first after the
+        asteroid belt\n
+        \nJupiter does not experience seasons like other planets such as Earth and Mars.
+        This is because the axis is only tilted by 3.13 degrees.
+        \nJupiter\'s Great Red Spot is an enormous storm that has been raging for over 300 years.
+        This storm is so wide that three Earth’s would fit inside of it.
+        \nIf Jupiter had become 80 times more massive, nuclear fusion would have occurred in its
+        core. Had that happened, it would have become a star instead of a planet.\n
+        \n<b>Did You Know?</b>
+        \nThere are no rockets powerful enough to hurl a spacecraft into the outer solar system and
+        beyond. In 1962, scientists calculated how to use Jupiter\'s intense gravity to hurl
+        spacecraft into the farthest regions of the solar system. We have been traveling farther and
+        faster ever since.
+    </string>
+    <string name="jupiter_facts"><b>Average distance from Sun:</b> 775.9 million km
+        \n<b>Size (radius):</b> 69,911 km
+        \n<b>Size (Compared to Earth):</b>  10.97 time the size of Earth
+        \n<b>Mass:</b> 1.898 × 10^27 kg (317.8 M⊕)
+        \n<b>Length of Day:</b> 0d 9h 56m
+        \n<b>Length of Year:</b> 12 years
+        \n<b>Planet Type:</b> Gas Giant
+        \n<b>Number of Moons:</b> 79
+        \n<b>Surface Temperature:</b> Average: -145 degrees Celsius
+    </string>
+    <string name="saturn_info">Saturn is the sixth planet from the Sun and second largest planet of
+        the Solar System in terms of diameter and mass. \n
+        \nSaturn’s atmosphere is composed of roughly 96% hydrogen and 4% helium, with trace
+        amounts of ammonia, acetylene, ethane, phosphine and methane. It has a thickness of
+        approximately 60 km. In the highest layer of the atmosphere, wind speeds reach
+        1,800 km/h, easily some of the fastest in the entire Solar System.
+        \nSaturn has the fastest winds of any other planet in our solar system.
+        These winds have been measured at approximately 1,800 km per hour (1,100 miles per hour).
+        \nSaturn gives off more energy than it receives from the Sun. This unusual quality is
+        believed to be generated from the gravitational compression of the planet combined with the
+        friction from large amount of helium found within its atmosphere.\n
+        \n<b>Did You Know?</b>
+        \nTwice every 29 and a half years the great planet Saturn appears ringless.
+        \nThis is an optical illusion:
+        \nEarthlings cannot see Saturn\'s rings when the rings are edge-on as viewed from the Earth.
+        They are barely visible through powerful telescopes.
+    </string>
+    <string name="saturn_facts"><b>Average distance from Sun:</b> 1.4963 billion km
+        \n<b>Size (radius):</b> 58,232 km
+        \n<b>Size (Compared to Earth):</b>  9.14 time the size of Earth
+        \n<b>Mass:</b> 5.683 × 10^26 kg (95.16 M⊕)
+        \n<b>Length of Day:</b> 0d 10h 42m
+        \n<b>Length of Year:</b> 29 years
+        \n<b>Planet Type:</b> Gas Giant
+        \n<b>Number of Moons:</b> 82
+        \n<b>Surface Temperature:</b> Average:  -178 °Celsius
+    </string>
+    <string name="uranus_info">Uranus is the seventh planet from the Sun. It’s not visible to the
+        naked eye, and became the first planet discovered with the use of a telescope. Uranus is
+        tipped over on its side with an axial tilt of 98 degrees. It is often described
+        as “rolling around the Sun on its side.”\n
+        \nUranus turns on its axis once every 17 hours, 14 minutes. The planet rotates in a
+        retrograde direction, opposite to the way Earth and most other planets turn.
+        \nUranus has two sets of very thin dark coloured rings. The ring particles are small,
+        ranging from a dust-sized particles to small boulders.\n
+        \n<b>Did You Know?</b>
+        \nUranus\' unique sideways rotation makes for weird seasons. The planet\'s north pole
+        experiences 21 years of nighttime in winter, 21 years of daytime in summer and 42 years of
+        day and night in the spring and fall.
+    </string>
+    <string name="uranus_facts"><b>Average distance from Sun:</b> 2.9625 billion km
+        \n<b>Size (radius):</b> 25,362 km
+        \n<b>Size (Compared to Earth):</b>  3.98 time the size of Earth
+        \n<b>Mass:</b> 8.681 × 10^25 kg (14.54 M⊕)
+        \n<b>Length of Day:</b> 0d 17h 14m
+        \n<b>Length of Year:</b> 84 years
+        \n<b>Planet Type:</b> Ice Giant
+        \n<b>Number of Moons:</b> 27
+        \n<b>Surface Temperature:</b> Average:  -224 °Celsius
+    </string>
+    <string name="neptune_info">Neptune is the eighth planet from the Sun, making it the most
+        distant in the solar system. This planet may have formed much closer to the Sun in the
+        early solar system history before migrating out to its current position.\n
+        \nNeptune has an incredibly thick atmosphere comprised of 74% hydrogen, 25% helium and
+        approximately 1% methane. Its atmosphere also contains icy clouds and the fastest winds
+        recorded in the solar system. Particles of icy methane and minor gases in the extremities
+        of the atmosphere give Neptune its deep blue colour. The striking blue and white features
+        of Neptune also help to distinguish it from Uranus.
+        \nNeptune has a very thin collection of rings. They are likely made up of ice particles
+        mixed with dust grains and possibly coated with a carbon-based substance.
+        \nNeptune was not known to the ancients. It is not visible to the naked eye and was first
+        observed in 1846. Its position was determined using mathematical predictions.
+        It was named after the Roman god of the sea.\n
+        \n<b>Did You Know?</b>
+        \nNeptune is our solar systems windiest world. Winds whip clouds of frozen methane across
+        the planet at speeds of more than 2,000 km/h (1,200 mph)—close to the top speed of a U.S.
+        Navy F/A-18 Hornet fighter jet. Earths most powerful winds hit only about 400 km/h (250 mph).
+    </string>
+    <string name="neptune_facts"><b>Average distance from Sun:</b> 4.4768 billion km
+        \n<b>Size (radius):</b> 24,622 km
+        \n<b>Size (Compared to Earth):</b>  3.86 time the size of Earth
+        \n<b>Mass:</b> 1.024 × 10^26 kg (17.15 M⊕)
+        \n<b>Length of Day:</b> 0d 16h 6m
+        \n<b>Length of Year:</b> 165 years
+        \n<b>Planet Type:</b> Ice Giant
+        \n<b>Number of Moons:</b> 14
+        \n<b>Surface Temperature:</b> Average:  -214 °Celsius
+    </string>
+
+    <string name="sun_info">The Sun—the heart of our solar system—is a yellow dwarf star,
+        a hot ball of glowing gases.\n
+        \nIts gravity holds the solar system together, keeping everything from the biggest planets
+        to the smallest particles of debris in its orbit. Electric currents in the Sun generate a
+        magnetic field that is carried out through the solar system by the solar wind—a stream of
+        electrically charged gas blowing outward from the Sun in all directions.\n
+        \nThe Sun will continue to burn for about 130 million years after it burns through all of
+        its hydrogen, instead burning helium. During this time it will expand to such a size that
+        it will engulf Mercury, Venus, and Earth. When it reaches this point, it will have
+        become a red giant star.\n
+        \nAs a star, the Sun is a ball of gas (92.1 percent hydrogen and 7.8 percent helium) held together by its own gravity.\n
+        \nAt the equator, the Sun spins once about every 25 days, but at its poles the Sun rotates once on its axis every 35 Earth days.\n
+        \n<b>Did You Know?</b>
+        \nThe Sun has inspired mythological stories in cultures around the world, including those of
+        the ancient Egyptians, the Aztecs of Mexico, Native American tribes of North and
+        South America, the Chinese, and many others.
+    </string>
+    <string name="sun_facts"><b>Age:</b> 4.6 Billion Years
+        \n<b>Size (radius):</b> 696,340 km
+        \n<b>Size (Compared to Earth):</b>  109.3 time the size of Earth
+        \n<b>Mass:</b> 1.989 × 10^30 kg
+        \n<b>Star Type:</b> Yellow Dwarf
+        \n<b>Surface Temperature:</b> 5778 Kelvin (5504.85 °Celsius)
+    </string>
+    <string name="moon_info">The brightest and largest object in our night sky, the Moon makes Earth
+        a more livable planet by moderating our home planet\'s wobble on its axis, leading to a
+        relatively stable climate. It also causes tides, creating a rhythm that has guided humans
+        for thousands of years. The Moon was likely formed after a Mars-sized body
+        collided with Earth.\n
+        \nThe Moon was the first place beyond Earth humans tried to reach as the Space Age began in
+        the last 1950s. More than 100 robotic explorers from more than half a dozen nations have
+        since sent spacecraft to the Moon. Nine crewed missions have flown to the Moon and back.\n
+        \nTwenty-four humans have traveled from the Earth to the Moon. Twelve walked on its surface.
+        The last human visited the lunar surface in 1972.\n
+        \nThe average composition of the lunar surface by weight is roughly 43 percent oxygen,
+        20 percent silicon, 19 percent magnesium, 10 percent iron, 3 percent calcium,
+        3 percent aluminum, 0.42 percent chromium, 0.18 percent titanium and 0.12 percent manganese.
+    </string>
+    <string name="moon_facts"><b>Distance from Earth:</b> 384,400 km
+        \n<b>Size (radius):</b> 1,737.1 km
+        \n<b>Size (Compared to Earth):</b>  0.27 time the size of Earth
+        \n<b>Mass:</b> 7.348 × 10^22 kg
+        \n<b>Orbital Period:</b> 27 days
+        \n<b>Gravity:</b> 1.62 m/s² (1/6th of Earths Gravity)
+        \n<b>Surface Temperature:</b> 5778 Kelvin (5504.85 °Celsius)
+    </string>
+
+</resources>

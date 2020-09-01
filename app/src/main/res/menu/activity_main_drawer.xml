@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"/>
+    </group>
+
+    <item android:title="@string/nav_planets">
+        <menu>
+            <item
+                android:id="@+id/nav_mercury"
+                android:title="Mercury"/>
+            <item
+                android:id="@+id/nav_venus"
+                android:title="Venus"/>
+            <item
+                android:id="@+id/nav_earth"
+                android:title="Earth"/>
+            <item
+                android:id="@+id/nav_mars"
+                android:title="Mars"/>
+            <item
+                android:id="@+id/nav_jupiter"
+                android:title="Jupiter"/>
+            <item
+                android:id="@+id/nav_saturn"
+                android:title="Saturn"/>
+            <item
+                android:id="@+id/nav_uranus"
+                android:title="Uranus"/>
+            <item
+                android:id="@+id/nav_neptune"
+                android:title="Neptune"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/nav_other">
+        <menu>
+            <item
+                android:id="@+id/nav_sun"
+                android:title="Sun"/>
+            <item
+                android:id="@+id/nav_moon"
+                android:title="Moon"/>
+
+        </menu>
+    </item>
+
+</menu>

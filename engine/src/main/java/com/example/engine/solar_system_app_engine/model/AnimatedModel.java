@@ -1,0 +1,166 @@
+package com.example.engine.solar_system_app_engine.model;
+
+import android.opengl.Matrix;
+
+import com.example.engine.solar_system_app_engine.animation.Animation;
+import com.example.engine.solar_system_app_engine.services.collada.entities.Joint;
+
+
+import java.nio.FloatBuffer;
+
+public class AnimatedModel extends Object3DData {
+
+	// skeleton
+	private Joint rootJoint;
+	private int jointCount;
+	private int boneCount;
+	private FloatBuffer jointIds;
+	private FloatBuffer vertexWeigths;
+	private Animation animation;
+
+	// cache
+	private float[][] jointMatrices;
+	private float[] bindShapeMatrix;
+	private final float[] newModelMatrix;
+
+	public AnimatedModel(FloatBuffer vertexArrayBuffer){
+		super(vertexArrayBuffer);
+		this.newModelMatrix = new float[16];
+		Matrix.setIdentityM(newModelMatrix,0);
+	}
+
+	/**
+	 * Creates a new entity capable of animation. The inverse bind transform for
+	 * all joints is calculated in this constructor. The bind transform is
+	 * simply the original (no pose applied) transform of a joint in relation to
+	 * the model's origin (model-space). The inverse bind transform is simply
+	 * that but inverted.
+	 *
+	 * @param rootJoint
+	 *            - the root joint of the joint hierarchy which makes up the
+	 *            "skeleton" of the entity.
+	 * @param jointCount
+	 *            - the number of joints in the joint hierarchy (skeleton) for
+	 *            this entity.
+	 * 
+	 */
+	public AnimatedModel setRootJoint(Joint rootJoint, int jointCount, int boneCount) {
+		this.rootJoint = rootJoint;
+		this.jointCount = jointCount;
+		this.boneCount = boneCount;
+        this.jointMatrices = new float[boneCount][16];
+        this.jointMatrices[rootJoint.getIndex()] = rootJoint.getAnimatedTransform();
+		return this;
+	}
+
+	public int getJointCount(){
+		return jointCount;
+	}
+
+	public int getBoneCount() {
+		return boneCount;
+	}
+
+	public AnimatedModel setJointIds(FloatBuffer jointIds){
+		this.jointIds = jointIds;
+		return this;
+	}
+
+	public FloatBuffer getJointIds(){
+		return jointIds;
+	}
+
+	public AnimatedModel setVertexWeights(FloatBuffer vertexWeigths){
+		this.vertexWeigths = vertexWeigths;
+		return this;
+	}
+
+	public FloatBuffer getVertexWeights(){
+		return vertexWeigths;
+	}
+
+	public AnimatedModel doAnimation(Animation animation){
+		this.animation = animation;
+		return this;
+	}
+
+	public Animation getAnimation(){
+		return animation;
+	}
+
+	/**
+	 * @return The root joint of the joint hierarchy. This joint has no parent,
+	 *         and every other joint in the skeleton is a descendant of this
+	 *         joint.
+	 */
+	public Joint getRootJoint() {
+		return rootJoint;
+	}
+
+	/**
+	 * Gets an array of the all important model-space transforms of all the
+	 * joints (with the current animation pose applied) in the entity. The
+	 * joints are ordered in the array based on their joint index. The position
+	 * of each joint's transform in the array is equal to the joint's index.
+	 * 
+	 * @return The array of model-space transforms of the joints in the current
+	 *         animation pose.
+	 */
+	public float[][] getJointTransforms() {
+		//addJointsToArray(rootJoint, jointMatrices);
+		return jointMatrices;
+	}
+
+	/**
+	 * This adds the current model-space transform of a joint (and all of its
+	 * descendants) into an array of transforms. The joint's transform is added
+	 * into the array at the position equal to the joint's index.
+	 * 
+	 * @param headJoint
+	 *            - the current joint being added to the array. This method also
+	 *            adds the transforms of all the descendents of this joint too.
+	 * @param jointMatrices
+	 *            - the array of joint transforms that is being filled.
+	 */
+	private void addJointsToArray(Joint headJoint, float [][] jointMatrices) {
+		if (headJoint.getIndex() >= 0) {
+			jointMatrices[headJoint.getIndex()] = headJoint.getAnimatedTransform();
+		}
+		for (int i=0; i<headJoint.getChildren().size(); i++) {
+			Joint childJoint = headJoint.getChildren().get(i);
+			addJointsToArray(childJoint, jointMatrices);
+		}
+	}
+
+	public void updateAnimatedTransform(Joint joint){
+		jointMatrices[joint.getIndex()] = joint.getAnimatedTransform();
+	}
+
+	// binding coming from skeleton
+	public void setBindShapeMatrix(float[] bindTransform) {
+		this.bindShapeMatrix = bindTransform;
+		this.updateModelMatrix();
+	}
+
+
+	public float[] getBindShapeMatrix() {
+		return bindShapeMatrix;
+	}
+
+	@Override
+	protected void updateModelMatrix() {
+		super.updateModelMatrix();
+		if (this.bindShapeMatrix == null){
+			// geometries not linked to any joint does not have bind shape transform
+			System.arraycopy(super.modelMatrix,0,this.newModelMatrix,0,16);
+		} else {
+			Matrix.multiplyMM(newModelMatrix, 0, super.modelMatrix, 0, this.bindShapeMatrix, 0);
+		}
+	}
+
+	@Override
+	public float[] getModelMatrix() {
+		return this.newModelMatrix;
+	}
+
+}

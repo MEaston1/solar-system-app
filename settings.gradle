@@ -1,0 +1,3 @@
+rootProject.name='Solar System App'
+include ':app'
+include ':engine'
